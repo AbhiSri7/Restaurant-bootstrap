@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(() => {
     $('#mycarousel').carousel({ interval: 2000 });
-    $('#carousel-button').click(function() {
+    $('#carousel-button').click(() => {
         if( $('#carousel-button').children('span').hasClass('fa-pause') ) {
             $('#mycarousel').carousel('pause');
             $('#carousel-button').children('span').removeClass('fa-pause');
@@ -12,10 +12,10 @@ $(document).ready(function() {
             $('#carousel-button').children('span').addClass('fa-pause');
         }
     });
-    $('#reserveTableButton').click( function() {
+    $('#reserveTableButton').click( () => {
         $('#reserveTableModal').modal('show');
     });
-    $('#loginButton').click( function() {
+    $('#loginButton').click( () => {
         $('#loginModal').modal('show');
     });
 });
